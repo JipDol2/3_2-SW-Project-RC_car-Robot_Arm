@@ -16,7 +16,7 @@
 **사용방법**
 
 <미리 준비되어야 할 사항>  
-\*- ADOxx 설치(사용법은 youtube 참고),RC Car 와 Robot Arm 의 Arduino 소스 완료(작동이 되는걸 확인),Bluetooth가 잘 작동되는지 확인\*
+\*- Node.js 설치,ADOxx 설치(사용법은 youtube 참고),RC Car 와 Robot Arm 의 Arduino 소스 완료(작동이 되는걸 확인),Bluetooth가 잘 작동되는지 확인\*
 
 1. node.js server source 에서 11번째줄에 Bluetooth가 연결된 장비의 port number를 입력해 준다.  
     ex) var serialPort = new SerialPort('COM20',false);  
@@ -77,6 +77,8 @@ if (name == "Automobile")
          }......
 ```
 
-5. ADOxx 에서 시나리오(어떤 명령을 줄 것인지)를 작성 후 ADoxx script(.asc)을 긁어서 붙여줌
+5. ./node 서버이름  를 입력하여 서버를 키고 블루투스가 잘 연결이 되었는지 확인
 
-6. 
+6. ADOxx 에서 시나리오(어떤 명령을 줄 것인지)를 작성 후 ADoxx script(.asc)을 긁어서 붙여줌 그 후 실행
+
+7.작동되는 것을 확인하면 끝 
